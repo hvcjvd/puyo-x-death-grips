@@ -7,13 +7,13 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	bot.sendMessage('pong');
+    	message.reply('pong');
   	}
 });
 
 client.on('message', message => {
     if (message.content === 'FUCK') {
-    	bot.sendMessage('WEAK, NO RESPECT');
+    	message.reply('WEAK, NO RESPECT');
   	}
 });
 
