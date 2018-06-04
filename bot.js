@@ -20,10 +20,6 @@ client.on('message', message => {
 const axios = require('axios')
 const keys = require('./keys')
 
-const Discordie = require('discordie')
-const { Events } = Discordie
-const client = new Discordie()
-
 // private keys
 const { discordToken, lastfmApiKey } = keys
 
