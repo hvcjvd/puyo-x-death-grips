@@ -17,9 +17,6 @@ client.on('message', message => {
   	}
 });
 
-const axios = require('axios')
-const keys = require('./keys')
-
 // private keys
 const { discordToken, lastfmApiKey } = keys
 
