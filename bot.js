@@ -13,7 +13,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'FUCK') {
-    	message.reply('WEAK, NO RESPECT, NO CHANCE');
+    	message.reply('WEAK, NO RESPECT');
   	}
 });
 
