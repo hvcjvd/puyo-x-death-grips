@@ -35,9 +35,60 @@ client.on('message', message => {
   	}
 });
 
+function slotEmote(SlotsPos) {
+	if (SlotsPos === 0) {
+		message.reply(`:tangerine:`);
+	}
+	if (SlotsPos === 1) {
+		message.reply(`:poop:`);
+	}
+	if (SlotsPos === 2) {
+		message.reply(`:apple:`);
+	}
+	if (SlotsPos === 3) {
+		message.reply(`:lemon:`);
+	}
+	if (SlotsPos === 4) {
+		message.reply(`:pineapple:`);
+	}
+};
 client.on('message', message => {
-    if (message.content === 'slots') {
-    	message.reply('the system seems way too complicated, will check out how to do it later');
+    if (message.content === 'm!slots') {
+		var Slot1 = Math.floor(Math.random() * 5;   
+		var Slot2 = Math.floor(Math.random() * 5;
+		var Slot3 = Math.floor(Math.random() * 5;  
+		if (Slot1 === Slot2) {
+			if (Slot1 === Slot3)
+				message.reply('3-Match Win! Super Lucky! \n');
+				slotEmote(Slot1);
+				slotEmote(Slot2);
+				slotEmote(Slot3);
+				return
+			message.reply('2-Match Win! Good Job! \n');
+			slotEmote(Slot1);
+			slotEmote(Slot2);
+			slotEmote(Slot3);
+			return
+		}
+		if else(Slot1 === Slot3) {
+			message.reply('2-Match Win! Good Job! \n';
+			slotEmote(Slot1);
+			slotEmote(Slot2);
+			slotEmote(Slot3);
+			return
+		}
+		if else(Slot2 === Slot3) {
+			message.reply('2-Match Win! Good Job! \n')
+			slotEmote(Slot1);
+			slotEmote(Slot2);
+			slotEmote(Slot3);
+			return
+    	else {
+			message.reply('You lose fucker!')
+			slotEmote(Slot1);
+			slotEmote(Slot2);
+			slotEmote(Slot3);
+			return
   	}
 });
 
