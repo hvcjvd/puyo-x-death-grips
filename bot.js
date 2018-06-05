@@ -30,12 +30,6 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'a') {
-    	message.reply('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
-  	}
-});
-
-client.on('message', message => {
     if (message.content === 'epic') {
     	message.reply('meme');
   	}
@@ -57,44 +51,53 @@ function slotEmote(SlotsPos) {
 	if (SlotsPos === 4) {
 		message.reply(`:pineapple:`);
 	}
-};
+}
 client.on('message', message => {
     if (message.content === 'm!slots') {
-		var Slot1 = Math.floor(Math.random() * 5;   
-		var Slot2 = Math.floor(Math.random() * 5;
-		var Slot3 = Math.floor(Math.random() * 5;  
+		var Slot1 = Math.floor(Math.random() * 5);   
+		var Slot2 = Math.floor(Math.random() * 5);
+		var Slot3 = Math.floor(Math.random() * 5);  
 		if (Slot1 === Slot2) {
-			if (Slot1 === Slot3)
+  		if (Slot1 === Slot3) {
 				message.reply('3-Match Win! Super Lucky! \n');
 				slotEmote(Slot1);
 				slotEmote(Slot2);
 				slotEmote(Slot3);
-				return
-			message.reply('2-Match Win! Good Job! \n');
-			slotEmote(Slot1);
-			slotEmote(Slot2);
-			slotEmote(Slot3);
-			return
+				return;
+				}
+  		else {
+  			message.reply('2-Match Win! Good Job! \n');
+				slotEmote(Slot1);
+				slotEmote(Slot2);
+				slotEmote(Slot3);
+				return;
 		}
 		if (Slot1 === Slot3) {
 			message.reply('2-Match Win! Good Job! \n');
 			slotEmote(Slot1);
 			slotEmote(Slot2);
 			slotEmote(Slot3);
-			return
+			return;
 		}
 		if (Slot2 === Slot3) {
 			message.reply('2-Match Win! Good Job! \n');
 			slotEmote(Slot1);
 			slotEmote(Slot2);
 			slotEmote(Slot3);
-			return
-    	else {
+			return;
+    }
+    if (Slot1 !== Slot2, Slot1 !== Slot2, Slot2 !== Slot3) {
 			message.reply('You lose fucker!');
 			slotEmote(Slot1);
 			slotEmote(Slot2);
 			slotEmote(Slot3);
-			return
+			return;
+  	}
+}}});
+
+client.on('message', message => {
+    if (message.content === 'a') {
+    	message.reply('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
   	}
 });
 
