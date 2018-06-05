@@ -35,6 +35,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'slots') {
+    	message.reply('the system seems way too complicated, will check out how to do it later');
+  	}
+});
+
 exports.run = (client, message, args) =>
 {
   let chainid = args[0];
