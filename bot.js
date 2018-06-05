@@ -17,6 +17,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'sex') {
+    	message.reply('YESU FUCK ME HARDER');
+  	}
+});
+
 exports.run = (client, message, args) =>
 {
   let chainid = args[0];
