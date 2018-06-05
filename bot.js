@@ -24,8 +24,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'fat yoshi sent you a fat request') {
-    	message.reply('tell him to mash my 10 inch deep pussy with his ginormous dinosaur cock');
+    if (message.content === 'fat yoshi sent you a fuck request') {
+    	message.reply('tell him to smash my 10 inch deep pussy with his ginormous dinosaur cock');
   	}
 });
 
