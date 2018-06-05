@@ -23,6 +23,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'fat yoshi sent you a fat request') {
+    	message.reply('tell him to mash my 10 inch deep pussy with his ginormous dinosaur cock');
+  	}
+});
+
 exports.run = (client, message, args) =>
 {
   let chainid = args[0];
