@@ -6,57 +6,55 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping').toLowerCase()
- {
+    if (message.content === 'ping') {
     	message.reply('pong');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'fuck').toLowerCase()
- {
+    if (message.content === 'FUCK') {
     	message.reply('WEAK, NO RESPECT');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'sex').toLowerCase()
- {
+    if (message.content === 'sex') {
     	message.reply('YESU FUCK ME HARDER');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'fat yoshi sent you a fuck request').toLowerCase()
- {
+    if (message.content === 'fat yoshi sent you a fuck request') {
     	message.reply('tell him to smash my 10 inch deep pussy with his ginormous dinosaur cock');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'epic').toLowerCase()
- {
+    if (message.content === 'epic') {
     	message.reply('meme');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'a').toLowerCase()
- {
+    if (message.content === 'a') {
     	message.reply('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === '@everyone').toLowerCase()
- {
+    if (message.content === '@everyone') {
     	message.reply('stop youre not funny');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'uwu').toLowerCase()
- {
+    if (message.content === '@everyone') {
+    	message.reply('stop youre not funny');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'uwu') {
     	message.reply('uwu!!');
   	}
 });
