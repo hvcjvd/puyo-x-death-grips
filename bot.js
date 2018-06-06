@@ -47,6 +47,18 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '@everyone') {
+    	message.reply('stop youre not funny');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'uwu') {
+    	message.reply('uwu!!');
+  	}
+});
+
 function slotEmote(SlotsPos) {
 	if (SlotsPos === 0) {
 		message.reply(`:tangerine:`);
