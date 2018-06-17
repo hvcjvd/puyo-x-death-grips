@@ -59,6 +59,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'luna') {
+    	message.reply('lunyyyyy~ bofa jeff');
+  	}
+});
+
 function slotEmote(SlotsPos) {
 	if (SlotsPos === 0) {
 		message.reply(`:tangerine:`);
