@@ -65,12 +65,6 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content === 'jUstIn') {
-    	message.reply('the goddamn cutest purest and nicest piece of shit i will ever love <3');
-  	}
-});
-
 function slotEmote(SlotsPos) {
 	if (SlotsPos === 0) {
 		message.reply(`:tangerine:`);
