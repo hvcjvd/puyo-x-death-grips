@@ -65,23 +65,6 @@ client.on('message', message => {
   	}
 });
 
-```function slotEmote(SlotsPos) {
-	if (SlotsPos === 0) {
-		message.reply(`:tangerine:`);
-	}
-	if (SlotsPos === 1) {
-		message.reply(`:poop:`);
-	}
-	if (SlotsPos === 2) {
-		message.reply(`:apple:`);
-	}
-	if (SlotsPos === 3) {
-		message.reply(`:lemon:`);
-	}
-	if (SlotsPos === 4) {
-		message.reply(`:pineapple:`);
-	}
-}
 ```
 client.on('message', message => {
     if (message.content === 'm!slots') {
@@ -109,6 +92,7 @@ client.on('message', message => {
 			message.reply('You lose fucker!', Slot1, Slot2, Slot3);
 			return;
   	}
+```
 }}});
 
 // THIS  MUST  BE  THIS  WAY
