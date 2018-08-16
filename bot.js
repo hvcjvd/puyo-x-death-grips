@@ -73,8 +73,15 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'slottest') {
-    	message.reply(Math.floor(Math.random() * 10));
-  	}
+        var space1 = Math.floor(Math.random() * 10)
+        var space2 = Math.floor(Math.random() * 10)
+        
+        if (space1 === space2){
+            message.reply('win!');
+        }
+        else () {
+            message.reply('lose!');
+  	    }
 });
 
 // THIS  MUST  BE  THIS  WAY
