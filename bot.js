@@ -73,8 +73,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'slottest') {
-        var space1 = (Math.floor(Math.random() * 10));
-        message.reply(space1);
+        message.reply('this shit too complicated gn');
 });
 
 // THIS  MUST  BE  THIS  WAY
