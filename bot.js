@@ -71,6 +71,17 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'maria') {
+    	message.reply('I LOVE MY LESBIAN MOM!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'evelyn') {
+    	message.reply('I LOVE MY OTHER LESBIAN MOM!');
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
