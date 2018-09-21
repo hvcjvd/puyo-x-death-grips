@@ -71,17 +71,6 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content === 'maria') {
-    	message.reply('I LOVE MY LESBIAN MOM!');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'evelyn') {
-    	message.reply('I LOVE MY OTHER LESBIAN MOM!');
-  	}
-});
 
 client.on('message', message => {
     if (message.content === 'slottest') {
