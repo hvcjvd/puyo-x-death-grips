@@ -78,5 +78,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'banana') {
+    	message.reply('PLEASE DON\'T EVER PUT ME BACK IN THERE');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
