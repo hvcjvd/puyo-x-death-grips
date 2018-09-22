@@ -31,7 +31,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'epic') {
-    	message.reply('meme');
+    	message.reply('faith no more');
   	}
 });
 
