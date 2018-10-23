@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+'(remove this and apostorphes to reactivate bot) const Discord = require('discord.js');' 
 const client = new Discord.Client();
 
 client.on('ready', () => {
